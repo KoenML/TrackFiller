@@ -1,0 +1,3 @@
+Writing Fast Tests Against Enterprise Rails 60min
+Clojure Ate Scala (on my project) 45min
+Rails for Python Developers lightning

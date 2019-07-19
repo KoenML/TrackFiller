@@ -1,0 +1,16 @@
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\UI.CLI.deps.json
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\UI.CLI.runtimeconfig.json
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\UI.CLI.runtimeconfig.dev.json
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\UI.CLI.dll
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\UI.CLI.pdb
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\BL.dll
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\BL.pdb
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.csprojAssemblyReference.cache
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.csproj.CoreCompileInputs.cache
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.AssemblyInfoInputs.cache
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.AssemblyInfo.cs
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.csproj.CopyComplete
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.dll
+C:\Users\koenm\RiderProjects\TrackFiller\UI.CLI\obj\Debug\netcoreapp2.2\UI.CLI.pdb

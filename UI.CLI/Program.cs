@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using BL;
+using Domain;
 
 namespace TrackFiller
 {
@@ -6,7 +9,12 @@ namespace TrackFiller
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ITalkReader talkReader = new TxtTalkReader();
+            ArrayList talks = talkReader.readTalks(@"C:\Users\koenm\RiderProjects\TrackFiller\input.txt");
+            foreach (Talk talk in talks)
+            {
+                Console.WriteLine($"talk:{talk.Title} duration:{talk.Duration.Hours} h {talk.Duration.Minutes} min");
+            }
         }
     }
 }

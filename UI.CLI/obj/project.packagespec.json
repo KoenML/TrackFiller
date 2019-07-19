@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\koenm\\RiderProjects\\TrackFiller\\BL\\BL.csproj": {
+            "projectPath": "C:\\Users\\koenm\\RiderProjects\\TrackFiller\\BL\\BL.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
