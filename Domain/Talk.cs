@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    public class Talk
+    public class Talk : IComparable<Talk>
     {
         public String Title { get; }
         public TimeSpan Duration { get; }
@@ -32,6 +32,13 @@ namespace Domain
             {
                 return ((Title != null ? Title.GetHashCode() : 0) * 397) ^ Duration.GetHashCode();
             }
+        }
+
+        public int CompareTo(Talk other)
+        {
+            if (ReferenceEquals(this, other)) return 0;
+            if (ReferenceEquals(null, other)) return 1;
+            return Duration.CompareTo(other.Duration);
         }
     }
 }
