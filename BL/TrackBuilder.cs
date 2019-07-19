@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.ComponentModel.Design;
 using System.Linq;
 using Domain;
 
@@ -19,19 +18,21 @@ namespace BL
             this.PmHoursMax = pmHoursMax;
         }
 
-        public Track BuildTrack(ArrayList talks, out ArrayList remainingTalks)
+        public (Track track, ArrayList remainingTalks) BuildTrack(ArrayList talks)
         {
            Track result = new Track();
-           result.AMTalks = AMBuilder(talks, out remainingTalks);
-           result.PMTalks = PMBuilder(remainingTalks, out remainingTalks);
-
-           return result;
+           var amResult = AMBuilder(talks);
+           result.AMTalks = amResult.amTalks;
+           var pmResult = PMBuilder(amResult.remainingTalks);
+           result.PMTalks = pmResult.pmTalks;
+           return (track: result, remainingTalks: pmResult.remainingTalks);
         }
 
-        private ArrayList AMBuilder(ArrayList talks, out ArrayList remainingTalks)
+        private (ArrayList amTalks, ArrayList remainingTalks) AMBuilder(ArrayList talks)
         {
             TimeSpan amDuration = TimeSpan.Zero;
             ArrayList result = new ArrayList();
+            ArrayList remainingTalks = new ArrayList();
             while (TimeSpan.Compare(amDuration, TimeSpan.FromHours(AmHours)) != 0)
             {
                 Talk query = talks.Cast<Talk>()
@@ -44,19 +45,18 @@ namespace BL
                 result.Add(query);
                 talks.Remove(query);
             }
-
             remainingTalks = talks;
-            return result;
+            return (amTalks: result, remainingTalks: remainingTalks);
         }
 
-        private ArrayList PMBuilder(ArrayList talks, out ArrayList remainingTalks)
+        private (ArrayList pmTalks, ArrayList remainingTalks) PMBuilder(ArrayList talks)
         {
             TimeSpan pmDuration = TimeSpan.Zero;
             ArrayList result = new ArrayList();
-            while (TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMin)) == 1 && TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMax)) == -1)
+            while (TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMin)) <= 0 || TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMax)) < 0  )
             {
                 Talk query = talks.Cast<Talk>()
-                    .Where(talk => (talk.Duration + pmDuration).TotalHours <= PmHoursMax && (talk.Duration + pmDuration).TotalHours >= PmHoursMin)
+                    .Where(talk => (talk.Duration + pmDuration).TotalHours <= PmHoursMax)
                     .OrderByDescending(talk => talk.Duration)
                     .Select(talk => talk)
                     .First();
@@ -66,8 +66,8 @@ namespace BL
                 talks.Remove(query);
             }
 
-            remainingTalks = talks;
-            return result;
+            ArrayList remainingTalks = talks;
+            return (pmTalks: result, remainingTalks: remainingTalks);
         }
     }
 }
