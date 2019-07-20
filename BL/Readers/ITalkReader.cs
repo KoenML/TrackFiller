@@ -4,6 +4,6 @@ namespace BL
 {
     public interface ITalkReader
     {
-        ArrayList readTalks(string path);
+        ArrayList readTalks();
     }
 }

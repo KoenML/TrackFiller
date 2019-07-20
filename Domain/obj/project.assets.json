@@ -688,7 +688,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\koenm\\.nuget\\packages\\": {}
+    "C:\\Users\\koenm\\.nuget\\packages\\": {},
+    "C:\\Users\\koenm\\.dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -699,6 +700,9 @@
       "packagesPath": "C:\\Users\\koenm\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\koenm\\RiderProjects\\TrackFiller\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Users\\koenm\\.dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\koenm\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
