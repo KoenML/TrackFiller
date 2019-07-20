@@ -6,6 +6,9 @@
     "projectPath": "C:\\Users\\koenm\\RiderProjects\\TrackFiller\\BL\\BL.csproj",
     "outputPath": "C:\\Users\\koenm\\RiderProjects\\TrackFiller\\BL\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Users\\koenm\\.dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],

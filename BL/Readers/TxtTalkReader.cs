@@ -8,10 +8,14 @@ namespace BL
     public class TxtTalkReader : ITalkReader
     {
         
-        public ArrayList readTalks(string path)
+        public ArrayList readTalks()
         {
+            //get path
+            Console.Out.Write("File Path:\t");
+            string filePath = Console.In.ReadLine();
+            
             //Read file as array of lines
-            string[] lines = System.IO.File.ReadAllLines(path);
+            string[] lines = System.IO.File.ReadAllLines(filePath);
             
             //Initialize return value and pattern to match against for parsing lines
             ArrayList talks = new ArrayList();

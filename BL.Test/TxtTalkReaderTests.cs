@@ -28,7 +28,7 @@ namespace Tests
         [Test]
         public void ParseTest()
         {
-            ArrayList talks = talkReader.readTalks(filePath);
+            ArrayList talks = talkReader.readTalks();
             foreach (Talk talk in talks)
             {
                 Assert.AreEqual(1, TimeSpan.Compare(talk.Duration, TimeSpan.Zero));
