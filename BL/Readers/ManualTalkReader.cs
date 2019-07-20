@@ -9,15 +9,14 @@ namespace BL
         public ArrayList readTalks()
         {
             ArrayList talks = new ArrayList();
-            int input = -1;
+            int input = 5;
             do
             {
                 Console.Out.WriteLine("***********************************************");
                 Console.Out.WriteLine("* Please Choose one of the following actions  *");
                 Console.Out.WriteLine("***********************************************");
                 Console.Out.WriteLine("* 1)\tEnter Talk                           *");
-                Console.Out.WriteLine("* 0)\tSave and exit to previous menu       *");
-                Console.Out.WriteLine("*-1)\tExit to previous menu                *");
+                Console.Out.WriteLine("*-1)\tSave and exit to previous menu       *");
                 Console.Out.WriteLine("***********************************************");
                 Console.Out.Write("Your input:\t");
                 string inputString = Console.In.ReadLine();
@@ -27,11 +26,16 @@ namespace BL
                     {
                         case 1: talks.Add(readTalk());
                             break;
-                        case -1: return new ArrayList();
+                        default: Console.Out.WriteLine("Input not recognized, use one of the above menu options");
+                            break;
                     }
                 }
+                else
+                {
+                    Console.Out.WriteLine("Input not recognized, use one of the above menu options");
+                }
                 
-            } while (input != 0);
+            } while (input != -1);
 
             return talks;
         }

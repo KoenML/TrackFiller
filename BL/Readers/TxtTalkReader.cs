@@ -11,8 +11,23 @@ namespace BL
         public ArrayList readTalks()
         {
             //get path
-            Console.Out.Write("File Path:\t");
-            string filePath = Console.In.ReadLine();
+            bool exists = false;
+            string filePath;
+            do
+            {
+                Console.Out.Write("File Path:\t");
+                filePath = Console.In.ReadLine();
+                if (System.IO.File.Exists(filePath))
+                {
+                    exists = true;
+                    
+                }
+                else
+                {
+                    Console.WriteLine("File does not exist or you do not have sufficient rights");
+                }
+            } while (!exists);
+            
             
             //Read file as array of lines
             string[] lines = System.IO.File.ReadAllLines(filePath);

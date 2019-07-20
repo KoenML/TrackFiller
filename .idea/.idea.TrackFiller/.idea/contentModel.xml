@@ -20,6 +20,10 @@
           <e p="TxtTalkReader.cs" t="Include" />
         </e>
         <e p="TrackBuilder.cs" t="Include" />
+        <e p="Writers" t="Include">
+          <e p="ITrackWriter.cs" t="Include" />
+          <e p="TxtTrackWriter.cs" t="Include" />
+        </e>
       </e>
       <e p="Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

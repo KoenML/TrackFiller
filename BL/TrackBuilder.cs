@@ -33,9 +33,14 @@ namespace BL
             TimeSpan amDuration = TimeSpan.Zero;
             ArrayList result = new ArrayList();
             ArrayList remainingTalks = new ArrayList();
-            while (TimeSpan.Compare(amDuration, TimeSpan.FromHours(AmHours)) != 0)
+            while (TimeSpan.Compare(amDuration, TimeSpan.FromHours(AmHours)) != 0 && 
+                   talks.Cast<Talk>()
+                       .Where(talk => ((talk.Duration + amDuration).TotalHours <= AmHours))
+                       .OrderByDescending(talk => talk.Duration)
+                       .Select(talk => talk).Any())
             {
-                Talk query = talks.Cast<Talk>()
+                
+                var query = talks.Cast<Talk>()
                     .Where(talk => ((talk.Duration + amDuration).TotalHours <= AmHours))
                     .OrderByDescending(talk => talk.Duration)
                     .Select(talk => talk)
@@ -53,7 +58,12 @@ namespace BL
         {
             TimeSpan pmDuration = TimeSpan.Zero;
             ArrayList result = new ArrayList();
-            while (TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMin)) <= 0 || TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMax)) < 0  )
+            while ((TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMin)) <= 0 || TimeSpan.Compare(pmDuration, TimeSpan.FromHours(PmHoursMax)) < 0) &&
+                   talks.Cast<Talk>()
+                       .Where(talk => (talk.Duration + pmDuration).TotalHours <= PmHoursMax)
+                       .OrderByDescending(talk => talk.Duration)
+                       .Select(talk => talk)
+                       .Any())
             {
                 Talk query = talks.Cast<Talk>()
                     .Where(talk => (talk.Duration + pmDuration).TotalHours <= PmHoursMax)
