@@ -62,7 +62,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI.CLI/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="165">
               <caret line="107" column="100" selection-start-line="107" selection-start-column="100" selection-end-line="107" selection-end-column="100" />
               <folding>
                 <marker date="1563737623070" expanded="true" signature="6:148" ph="..." />
@@ -340,12 +340,12 @@
       <workItem from="1563531795214" duration="1648000" />
       <workItem from="1563527554298" duration="15627000" />
       <workItem from="1563629714779" duration="13518000" />
-      <workItem from="1563724589052" duration="12765000" />
+      <workItem from="1563724589052" duration="13325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43558000" />
+    <option name="totallyTimeSpent" value="44118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,14 +358,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23474178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33194444" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33194444" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,10 +372,10 @@
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32916668" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.30833334" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.32916668" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -599,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI.CLI/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="165">
           <caret line="107" column="100" selection-start-line="107" selection-start-column="100" selection-end-line="107" selection-end-column="100" />
           <folding>
             <marker date="1563737623070" expanded="true" signature="6:148" ph="..." />
