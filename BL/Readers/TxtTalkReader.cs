@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Domain;
 
@@ -8,7 +9,7 @@ namespace BL
     public class TxtTalkReader : ITalkReader
     {
         
-        public ArrayList readTalks()
+        public List<Talk> readTalks()
         {
             //get path
             bool exists = false;
@@ -33,7 +34,7 @@ namespace BL
             string[] lines = System.IO.File.ReadAllLines(filePath);
             
             //Initialize return value and pattern to match against for parsing lines
-            ArrayList talks = new ArrayList();
+            List<Talk> talks = new List<Talk>();
             string pattern = @"(?'Title'[^0-9\n]+)(?'Duration'lightning|\d+)(min)?";
             
             //Iterate over lines, parse each line into title and duration

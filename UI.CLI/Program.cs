@@ -1,7 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
+using System.Linq;
 using BL;
+using BL.Builders;
+using BL.Exceptions;
 using BL.Writers;
 using Domain;
 
@@ -12,8 +14,10 @@ namespace TrackFiller
         static void Main(string[] args)
         {
             int input = 0;
-            ArrayList talks = new ArrayList();
-            ArrayList tracks = new ArrayList();
+            List<Talk> talks = new List<Talk>();
+            List<Track> tracks = new List<Track>();
+            
+            
             do
             {
                 Console.Out.WriteLine("***********************************************");
@@ -27,6 +31,8 @@ namespace TrackFiller
                 Console.Out.WriteLine("*-1)\tExit (Losing all loaded Talks)       *");
                 Console.Out.WriteLine("***********************************************");
                 Console.Out.Write("Your input:\t");
+                
+                
                 string inputString = Console.In.ReadLine();
                 if (Int32.TryParse(inputString, out input))
                 {
@@ -54,10 +60,10 @@ namespace TrackFiller
 
         }
 
-        private static ArrayList LoadTalks()
+        private static List<Talk> LoadTalks()
         {
             int input = 0;
-            ArrayList result = new ArrayList();
+            List<Talk> result = new List<Talk>();
             ITalkReader talkReader;
             do
             {
@@ -91,7 +97,7 @@ namespace TrackFiller
                 }
                 else
                 {
-                    Console.Out.WriteLine("Input not recognized, strictly use the number in front of the menu option");
+                    Console.Out.WriteLine("Input not recognized, use one of the above menu options");
  
                 }
             } while (input != -1);
@@ -99,11 +105,11 @@ namespace TrackFiller
             return result;
         }
 
-        private static (ArrayList tracks, ArrayList remainingTalks) BuildTracks(ArrayList talks)
+        private static (List<Track> tracks, List<Talk> remainingTalks) BuildTracks(List<Talk> talks)
         {
             int input = 0;
-            ArrayList result = new ArrayList();
-            TrackBuilder trackBuilder = new TrackBuilder(3, 3, 4);
+            List<Track> result = new List<Track>();
+            ITrackBuilder trackBuilder = new SimulTrackBuilder(3, 3, 4);
             do
             {
                 Console.Out.WriteLine("***********************************************");
@@ -119,8 +125,64 @@ namespace TrackFiller
                 {
                     switch (input)
                     {
-                        case 1: 
-                            Console.Out.WriteLine("How many hours are in the AM session: ");
+                        case 1:
+                            trackBuilder = TrackBuilderSettings();
+                            break;
+                        case 2:
+                            if (talks.Count == 0)
+                            {
+                                Console.Out.WriteLine("There are no talks available to build new track");
+                                break;
+                            }
+                            Console.Out.WriteLine("How many Tracks should be build?");
+                            inputString = Console.In.ReadLine();
+                            if (Int32.TryParse(inputString, out input) && input > 0)
+                            {
+                                try
+                                {
+                                    var builderResult = trackBuilder.BuildTracks(talks, input);
+                                    result = builderResult.tracks;
+                                    talks = builderResult.remainingTalks;
+                                    if (talks.Count != 0)
+                                    {
+                                        Console.Out.WriteLine($"There are still {talks.Count} talks left not included in any tracks");
+                                        Console.Out.WriteLine($"You can add {trackBuilder.getMinimumTime() * 60 - talks.Sum(t => t.Duration.TotalMinutes)} minutes worth of talks to create another track");
+                                        Console.In.Read();
+                                    }
+                                }
+                                catch (NotEnoughTalksException e)
+                                {
+                                    Console.WriteLine($"Not enough talks to fill requested number of tracks. {e.MinutesShort} minutes short");
+                                    Console.In.ReadLine();
+                                }
+                            }
+                            else
+                            {
+                                Console.Out.WriteLine("Input not recognized, use only positive integers");
+                            }
+                            break;
+                        default: Console.Out.WriteLine("Input not recognized, use one of the above menu options");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.Out.WriteLine("Input not recognized, use one of the above menu options");
+                }
+            } while (input != -1);
+            
+            return (tracks: result, remainingTalks: talks);
+        }
+
+        private static void WriteTracks(List<Track> tracks)
+        {
+            ITrackWriter trackWriter = new TxtTrackWriter();
+            trackWriter.writeTracks(tracks);
+        }
+        
+        private static ITrackBuilder TrackBuilderSettings()
+        {
+            Console.Out.WriteLine("How many hours are in the AM session: ");
                             string settingsString = Console.In.ReadLine();
                             if (!Int32.TryParse(settingsString, out int amHours) && amHours != 0)
                             {
@@ -153,50 +215,7 @@ namespace TrackFiller
                                     settingsString = Console.In.ReadLine();
                                 } while (!Int32.TryParse(settingsString, out pmMax) && pmMax != 0);
                             }
-                            trackBuilder = new TrackBuilder(amHours, pmMin, pmMax);
-                            break;
-                        case 2:
-                            if (talks.Count == 0)
-                            {
-                                Console.Out.WriteLine("There are no more talks available to build new track");
-                                break;
-                            }
-                            Console.Out.WriteLine($"There are {talks.Count} available talks to build a new Track");
-                            Console.Out.WriteLine("Do you want to build a new Track? y/n (no exits this menu)");
-                            string newTrackAnswer = Console.In.ReadLine();
-                            switch (newTrackAnswer)
-                            {
-                                case "y":
-                                    var trackAndRemaining = trackBuilder.BuildTrack(talks);
-                                    result.Add(trackAndRemaining.track);
-                                    talks = trackAndRemaining.remainingTalks;
-                                    Console.Out.WriteLine($"Track built, {trackAndRemaining.remainingTalks.Count} remaining talks");
-                                    break;
-                                case "n":
-                                    input = -1;
-                                    break;
-                                default:
-                                    Console.Out.WriteLine("Input not recognized");
-                                    break;
-                            }
-                            break;
-                        default: Console.Out.WriteLine("Input not recognized, use one of the above menu options");
-                            break;
-                    }
-                }
-                else
-                {
-                    Console.Out.WriteLine("Input not recognized, strictly use the number in front of the menu option");
-                }
-            } while (input != -1);
-            
-            return (tracks: result, remainingTalks: talks);
-        }
-
-        private static void WriteTracks(ArrayList tracks)
-        {
-            ITrackWriter trackWriter = new TxtTrackWriter();
-            trackWriter.writeTracks(tracks);
+                            return new SimulTrackBuilder(amHours, pmMin, pmMax);
         }
     }
 }

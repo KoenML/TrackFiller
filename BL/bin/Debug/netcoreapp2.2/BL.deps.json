@@ -1,17 +1,26 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "50f33094e1d4042914293d63f4a1b72b7191cb7d"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "BL/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "morelinq": "3.2.0"
         },
         "runtime": {
           "BL.dll": {}
+        }
+      },
+      "morelinq/3.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/MoreLinq.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
         }
       },
       "Domain/1.0.0": {
@@ -26,6 +35,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "morelinq/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YMz+A8PbY+5BqnWR+IJaJ47Uj54/PrpPOQBqjmqdybpGxhfeXFJrGeRNW0RED/vScftrVdnZNM5gxs8CmLBjmQ==",
+      "path": "morelinq/3.2.0",
+      "hashPath": "morelinq.3.2.0.nupkg.sha512"
     },
     "Domain/1.0.0": {
       "type": "project",

@@ -1,0 +1,16 @@
+Conference Planning
+
+
+
+
+Track 1:
+13:00PM : Writing Fast Tests Against Enterprise Rails  60 min
+14:00PM : Communicating Over Distance  60 min
+15:00PM : Rails Magic  60 min
+16:00PM : Ruby on Rails: Why We Should Move On  60 min
+Track 2:
+13:00PM : Ruby on Rails Legacy App Maintenance  60 min
+14:00PM : Overdoing it in Python  45 min
+14:45PM : Ruby Errors from Mismatched Gem Versions  45 min
+15:30PM : Common Ruby Errors  45 min
+16:15PM : Accounting-Driven Development  45 min

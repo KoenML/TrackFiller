@@ -7,6 +7,14 @@
       <e p="BL" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BL.csproj" t="IncludeRecursive" />
+        <e p="Builders" t="Include">
+          <e p="ITrackBuilder.cs" t="Include" />
+          <e p="SimulTrackBuilder.cs" t="Include" />
+        </e>
+        <e p="Exceptions" t="Include">
+          <e p="NotEnoughTalksException.cs" t="Include" />
+          <e p="TimeRestraintException.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -19,7 +27,6 @@
           <e p="ManualTalkReader.cs" t="Include" />
           <e p="TxtTalkReader.cs" t="Include" />
         </e>
-        <e p="TrackBuilder.cs" t="Include" />
         <e p="Writers" t="Include">
           <e p="ITrackWriter.cs" t="Include" />
           <e p="TxtTrackWriter.cs" t="Include" />

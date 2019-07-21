@@ -1,17 +1,18 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Domain
 {
     public class Track
     {
-        public ArrayList AMTalks { get; set; }
-        public ArrayList PMTalks { get; set; }
+        public List<Talk> AMTalks { get; set; }
+        public List<Talk> PMTalks { get; set; }
 
         public Track()
         {
-            AMTalks = new ArrayList();
-            PMTalks = new ArrayList();
+            AMTalks = new List<Talk>();
+            PMTalks = new List<Talk>();
         }
 
         protected bool Equals(Track other)

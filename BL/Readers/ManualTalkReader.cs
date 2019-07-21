@@ -1,14 +1,15 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Domain;
 
 namespace BL
 {
     public class ManualTalkReader : ITalkReader
     {
-        public ArrayList readTalks()
+        public List<Talk> readTalks()
         {
-            ArrayList talks = new ArrayList();
+            List<Talk> talks = new List<Talk>();
             int input = 5;
             do
             {

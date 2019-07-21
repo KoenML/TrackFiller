@@ -38,6 +38,10 @@
           "target": "Package",
           "version": "[2.2.0, )",
           "autoReferenced": true
+        },
+        "morelinq": {
+          "target": "Package",
+          "version": "[3.2.0, )"
         }
       },
       "imports": [

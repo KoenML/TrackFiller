@@ -1,9 +1,10 @@
-using System.Collections;
+using System.Collections.Generic;
+using Domain;
 
 namespace BL
 {
     public interface ITalkReader
     {
-        ArrayList readTalks();
+        List<Talk> readTalks();
     }
 }

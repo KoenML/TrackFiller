@@ -2,9 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b04b332-93ec-4d6c-8826-bcb0c680d21f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BL/Builders/ITrackBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BL/Builders/SimulTrackBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BL/Exceptions/NotEnoughTalksException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BL/Exceptions/TimeRestraintException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TrackFiller/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrackFiller/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TrackFiller/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TrackFiller/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/BL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BL/BL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/Readers/ITalkReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BL/Readers/ITalkReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/TrackBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/Writers/ITrackWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BL/Writers/ITrackWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BL/bin/Debug/netcoreapp2.2/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/BL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/BL.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/Debug/netcoreapp2.2/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BL/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/BL/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConferenceTracks636992464811063321.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Track.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Track.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp2.2/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp2.2/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp2.2/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/bin/Debug/netcoreapp2.2/Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/Debug/netcoreapp2.2/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/BL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/BL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/BL.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/BL.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/bin/Debug/netcoreapp2.2/UI.CLI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/Debug/netcoreapp2.2/UI.CLI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/UI.CLI.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/UI.CLI.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.CLI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UI.CLI/obj/project.assets.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,91 +59,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI.CLI/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+            <state relative-caret-position="298">
+              <caret line="107" column="100" selection-start-line="107" selection-start-column="100" selection-end-line="107" selection-end-column="100" />
               <folding>
-                <marker date="1563642689711" expanded="true" signature="6:126" ph="..." />
-                <marker date="1563642689711" expanded="true" signature="149:10304" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="169:10302" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="215:2375" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="1436:2131" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="1489:2113" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="2152:2308" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="2421:4523" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="3364:4259" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="3417:4241" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="4280:4438" ph="{...}" />
-                <marker date="1563642689711" expanded="false" signature="4621:10111" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="5595:9816" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="5648:9798" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="5969:6469" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="6732:7236" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="7499:8003" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="8204:8414" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="8770:9591" ph="{...}" />
-                <marker date="1563642689711" expanded="true" signature="9837:9993" ph="{...}" />
-                <marker date="1563642689711" expanded="false" signature="10170:10296" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="6:148" ph="..." />
+                <marker date="1563737623070" expanded="true" signature="171:11036" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="191:11034" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="237:2463" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="1524:2219" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="1577:2201" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="2240:2396" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="2510:4596" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="3455:4350" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="3508:4332" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="4371:4511" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="4698:8387" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="5682:8110" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="5735:8092" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="5973:6178" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="6415:7685" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="6481:7319" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="6810:7285" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="7385:7655" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="7718:7885" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="8131:8269" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="8448:8574" ph="{...}" />
+                <marker date="1563737623070" expanded="false" signature="8643:11028" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="8903:9403" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="9666:10170" ph="{...}" />
+                <marker date="1563737623070" expanded="true" signature="10433:10937" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BL/TrackBuilder.cs">
+        <entry file="file://$PROJECT_DIR$/BL/Builders/SimulTrackBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="56" column="88" selection-start-line="56" selection-start-column="88" selection-end-line="56" selection-end-column="88" />
+            <state relative-caret-position="268">
+              <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
               <folding>
-                <marker date="1563642689691" expanded="true" signature="6:72" ph="..." />
-                <marker date="1563642689691" expanded="true" signature="86:3186" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="118:3184" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="312:452" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="536:869" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="959:2005" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="1455:1889" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="2095:3178" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="2632:3051" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="6:143" ph="..." />
+                <marker date="1563737548670" expanded="true" signature="166:6110" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="219:6108" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="427:552" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="667:1969" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="1197:1295" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="1427:1624" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="1725:1922" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="2006:2067" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="2221:4962" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="2429:2595" ph="/* Loop to keep looking for talks which can still fit in the AM part ... */" />
+                <marker date="1563737548670" expanded="true" signature="2841:4785" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="3344:3931" ph="/* Check to see if when adding this talk to the track, there are still talks available so we can meet our time re ... */" />
+                <marker date="1563737548670" expanded="true" signature="4302:4623" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="4644:4720" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="5124:6102" ph="{...}" />
+                <marker date="1563737548670" expanded="true" signature="5631:5975" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BL/Writers/ITrackWriter.cs">
+        <entry file="file://$PROJECT_DIR$/BL/Builders/ITrackBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
-                <marker date="1563642689692" expanded="true" signature="47:141" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="83:139" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="80" column="198" selection-start-line="80" selection-start-column="198" selection-end-line="80" selection-end-column="198" />
-              <folding>
-                <marker date="1563642689692" expanded="true" signature="6:70" ph="..." />
-                <marker date="1563642689692" expanded="true" signature="92:3806" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="141:3804" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="197:3780" ph="{...}" />
-                <marker date="1563642689692" expanded="false" signature="524:909" ph="{...}" />
-                <marker date="1563642689692" expanded="false" signature="1129:1514" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="1551:1617" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="1899:1991" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="2012:2115" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="2316:2384" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="2462:3632" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="2621:3618" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="2833:3131" ph="{...}" />
-                <marker date="1563642689692" expanded="true" signature="3265:3563" ph="{...}" />
+                <marker date="1563737548678" expanded="true" signature="6:73" ph="..." />
+                <marker date="1563737548678" expanded="true" signature="96:284" ph="{...}" />
+                <marker date="1563737548678" expanded="true" signature="133:282" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -107,31 +141,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="118">
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
               <folding>
-                <marker date="1563642689691" expanded="false" signature="6:91" ph="..." />
-                <marker date="1563642689691" expanded="true" signature="105:2559" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="152:2557" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="204:2551" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="482:574" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="595:730" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="1257:2423" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="1916:2008" ph="{...}" />
-                <marker date="1563642689691" expanded="true" signature="2029:2190" ph="{...}" />
+                <marker date="1563732720502" expanded="false" signature="6:125" ph="..." />
+                <marker date="1563732720502" expanded="true" signature="139:2596" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="186:2594" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="239:2588" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="517:609" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="630:765" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="1294:2460" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="1953:2045" ph="{...}" />
+                <marker date="1563732720502" expanded="true" signature="2066:2227" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BL/Readers/ITalkReader.cs">
+        <entry file="file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="-242">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
-                <marker date="1563642689690" expanded="true" signature="39:119" ph="{...}" />
-                <marker date="1563642689690" expanded="true" signature="74:117" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="6:87" ph="..." />
+                <marker date="1563732720488" expanded="true" signature="101:2988" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="151:2986" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="195:1619" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="1016:1371" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="1069:1353" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="1392:1530" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="1652:2980" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="2408:2673" ph="{...}" />
+                <marker date="1563732720488" expanded="true" signature="2694:2828" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -143,15 +185,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/BL/Exceptions/NotEnoughTalksException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BL/Exceptions/TimeRestraintException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BL/Builders/SimulTrackBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BL/Builders/ITrackBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BL/Writers/ITrackWriter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Talk.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BL/TrackBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Domain/Track.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B681A47F-B789-4724-BD08-CC0A0213E9B7/3b/9eafb882/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BL/Readers/ITalkReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BL/Writers/ITrackWriter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UI.CLI/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -160,19 +205,24 @@
         <option value="$PROJECT_DIR$/BL/Class1.cs" />
         <option value="$PROJECT_DIR$/BL/Talk.cs" />
         <option value="$PROJECT_DIR$/Domain/Class1.cs" />
-        <option value="$PROJECT_DIR$/Domain/Track.cs" />
         <option value="$PROJECT_DIR$/BL/ITalkReader.cs" />
         <option value="$PROJECT_DIR$/BL/TxtTalkReader.cs" />
         <option value="$PROJECT_DIR$/BL.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/Domain/Talk.cs" />
-        <option value="$PROJECT_DIR$/BL/Readers/ITalkReader.cs" />
         <option value="$PROJECT_DIR$/BL.Test/TxtTalkReaderTests.cs" />
-        <option value="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" />
+        <option value="$PROJECT_DIR$/BL/TrackBuilder.cs" />
+        <option value="$PROJECT_DIR$/BL/Builders/TrackBuilder.cs" />
+        <option value="$PROJECT_DIR$/BL/Exceptions/TimeRestraintException.cs" />
+        <option value="$PROJECT_DIR$/BL/Exceptions/NotEnoughTalksException.cs" />
+        <option value="$PROJECT_DIR$/Domain/Track.cs" />
+        <option value="$PROJECT_DIR$/BL/Readers/ITalkReader.cs" />
         <option value="$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs" />
         <option value="$PROJECT_DIR$/BL/Writers/ITrackWriter.cs" />
-        <option value="$PROJECT_DIR$/UI.CLI/Program.cs" />
-        <option value="$PROJECT_DIR$/BL/TrackBuilder.cs" />
         <option value="$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs" />
+        <option value="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" />
+        <option value="$PROJECT_DIR$/BL/Builders/ITrackBuilder.cs" />
+        <option value="$PROJECT_DIR$/BL/Builders/SimulTrackBuilder.cs" />
+        <option value="$PROJECT_DIR$/UI.CLI/Program.cs" />
       </list>
     </option>
   </component>
@@ -188,8 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -206,6 +254,18 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="TrackFiller" type="24d0babc:SolutionExplorerModelNode" />
               <item name="BL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Builders" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TrackFiller" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="BL" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Exceptions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TrackFiller" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="BL" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Readers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
@@ -214,11 +274,18 @@
               <item name="BL" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Writers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="TrackFiller" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Domain" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,12 +339,13 @@
       <updated>1563531792357</updated>
       <workItem from="1563531795214" duration="1648000" />
       <workItem from="1563527554298" duration="15627000" />
-      <workItem from="1563629714779" duration="13022000" />
+      <workItem from="1563629714779" duration="13518000" />
+      <workItem from="1563724589052" duration="12765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30297000" />
+    <option name="totallyTimeSpent" value="43558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -290,24 +358,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23138833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23474178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33194444" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33194444" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32986626" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32916668" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.30833334" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.32916668" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -330,84 +399,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>21</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="22">
-            <startOffsets>
-              <option value="876" />
-            </startOffsets>
-            <endOffsets>
-              <option value="919" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>22</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="23">
-            <startOffsets>
-              <option value="936" />
-            </startOffsets>
-            <endOffsets>
-              <option value="979" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>23</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="24">
-            <startOffsets>
-              <option value="996" />
-            </startOffsets>
-            <endOffsets>
-              <option value="997" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>34</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="36">
-            <startOffsets>
-              <option value="1394" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1475" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>37</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="39">
-            <startOffsets>
-              <option value="1523" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1524" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs</url>
-          <line>39</line>
-          <properties documentPath="$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs" initialLine="41">
-            <startOffsets>
-              <option value="1559" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1572" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -430,23 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Domain/Track.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="84" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
-          <folding>
-            <marker date="1563532824041" expanded="true" signature="6:39" ph="..." />
-            <marker date="1563532824041" expanded="true" signature="57:987" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="82:985" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="206:304" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="348:453" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="502:740" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="783:979" ph="{...}" />
-            <marker date="1563532824041" expanded="true" signature="815:969" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B681A47F-B789-4724-BD08-CC0A0213E9B7/3b/9eafb882/Enumerable.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -454,139 +428,206 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BL.Test/TxtTalkReaderTests.cs">
+    <entry file="file://$PROJECT_DIR$/BL.Test/TxtTalkReaderTests.cs" />
+    <entry file="file://$PROJECT_DIR$/BL/Exceptions/TimeRestraintException.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <marker date="1563727705970" expanded="true" signature="38:131" ph="{...}" />
+            <marker date="1563727705970" expanded="true" signature="108:129" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Exceptions/NotEnoughTalksException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <marker date="1563727705985" expanded="true" signature="23:271" ph="{...}" />
+            <marker date="1563727705985" expanded="true" signature="91:269" ph="{...}" />
+            <marker date="1563727705985" expanded="true" signature="202:263" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Builders/TrackBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="83" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <marker date="1563732720449" expanded="true" signature="6:104" ph="..." />
+            <marker date="1563732720449" expanded="true" signature="126:3842" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="175:3840" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="233:3816" ph="{...}" />
+            <marker date="1563732720449" expanded="false" signature="560:945" ph="{...}" />
+            <marker date="1563732720449" expanded="false" signature="1165:1550" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="1587:1653" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="1935:2027" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="2048:2151" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="2352:2420" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="2498:3668" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="2657:3654" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="2869:3167" ph="{...}" />
+            <marker date="1563732720449" expanded="true" signature="3301:3599" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BL/Writers/ITrackWriter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
-            <marker date="1563642689692" expanded="true" signature="47:141" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="83:139" ph="{...}" />
+            <marker date="1563732720467" expanded="true" signature="6:73" ph="..." />
+            <marker date="1563732720467" expanded="true" signature="95:191" ph="{...}" />
+            <marker date="1563732720467" expanded="true" signature="131:189" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs">
+    <entry file="file://$PROJECT_DIR$/Domain/Track.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <marker date="1563642689690" expanded="true" signature="6:53" ph="..." />
-            <marker date="1563642689690" expanded="true" signature="67:2951" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="117:2949" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="160:1582" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="979:1334" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="1032:1316" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="1355:1493" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="1615:2943" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="2371:2636" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="2657:2791" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="6:73" ph="..." />
+            <marker date="1563732720480" expanded="true" signature="91:1025" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="116:1023" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="242:342" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="386:491" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="540:778" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="821:1017" ph="{...}" />
+            <marker date="1563732720480" expanded="true" signature="853:1007" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BL/Readers/ITalkReader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        <state>
           <folding>
-            <marker date="1563642689690" expanded="true" signature="39:119" ph="{...}" />
-            <marker date="1563642689690" expanded="true" signature="74:117" ph="{...}" />
+            <marker date="1563732720441" expanded="true" signature="6:47" ph="..." />
+            <marker date="1563732720441" expanded="true" signature="61:142" ph="{...}" />
+            <marker date="1563732720441" expanded="true" signature="96:140" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BL/Readers/TxtTalkReader.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="118">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
           <folding>
-            <marker date="1563642689691" expanded="false" signature="6:91" ph="..." />
-            <marker date="1563642689691" expanded="true" signature="105:2559" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="152:2557" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="204:2551" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="482:574" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="595:730" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="1257:2423" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="1916:2008" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="2029:2190" ph="{...}" />
+            <marker date="1563732720502" expanded="false" signature="6:125" ph="..." />
+            <marker date="1563732720502" expanded="true" signature="139:2596" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="186:2594" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="239:2588" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="517:609" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="630:765" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="1294:2460" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="1953:2045" ph="{...}" />
+            <marker date="1563732720502" expanded="true" signature="2066:2227" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Readers/ManualTalkReader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-242">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding>
+            <marker date="1563732720488" expanded="true" signature="6:87" ph="..." />
+            <marker date="1563732720488" expanded="true" signature="101:2988" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="151:2986" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="195:1619" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="1016:1371" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="1069:1353" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="1392:1530" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="1652:2980" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="2408:2673" ph="{...}" />
+            <marker date="1563732720488" expanded="true" signature="2694:2828" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Builders/ITrackBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <marker date="1563737548678" expanded="true" signature="6:73" ph="..." />
+            <marker date="1563737548678" expanded="true" signature="96:284" ph="{...}" />
+            <marker date="1563737548678" expanded="true" signature="133:282" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BL/Builders/SimulTrackBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+          <folding>
+            <marker date="1563737548670" expanded="true" signature="6:143" ph="..." />
+            <marker date="1563737548670" expanded="true" signature="166:6110" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="219:6108" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="427:552" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="667:1969" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="1197:1295" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="1427:1624" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="1725:1922" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="2006:2067" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="2221:4962" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="2429:2595" ph="/* Loop to keep looking for talks which can still fit in the AM part ... */" />
+            <marker date="1563737548670" expanded="true" signature="2841:4785" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="3344:3931" ph="/* Check to see if when adding this talk to the track, there are still talks available so we can meet our time re ... */" />
+            <marker date="1563737548670" expanded="true" signature="4302:4623" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="4644:4720" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="5124:6102" ph="{...}" />
+            <marker date="1563737548670" expanded="true" signature="5631:5975" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI.CLI/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+        <state relative-caret-position="298">
+          <caret line="107" column="100" selection-start-line="107" selection-start-column="100" selection-end-line="107" selection-end-column="100" />
           <folding>
-            <marker date="1563642689711" expanded="true" signature="6:126" ph="..." />
-            <marker date="1563642689711" expanded="true" signature="149:10304" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="169:10302" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="215:2375" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="1436:2131" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="1489:2113" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="2152:2308" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="2421:4523" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="3364:4259" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="3417:4241" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="4280:4438" ph="{...}" />
-            <marker date="1563642689711" expanded="false" signature="4621:10111" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="5595:9816" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="5648:9798" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="5969:6469" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="6732:7236" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="7499:8003" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="8204:8414" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="8770:9591" ph="{...}" />
-            <marker date="1563642689711" expanded="true" signature="9837:9993" ph="{...}" />
-            <marker date="1563642689711" expanded="false" signature="10170:10296" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BL/TrackBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="56" column="88" selection-start-line="56" selection-start-column="88" selection-end-line="56" selection-end-column="88" />
-          <folding>
-            <marker date="1563642689691" expanded="true" signature="6:72" ph="..." />
-            <marker date="1563642689691" expanded="true" signature="86:3186" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="118:3184" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="312:452" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="536:869" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="959:2005" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="1455:1889" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="2095:3178" ph="{...}" />
-            <marker date="1563642689691" expanded="true" signature="2632:3051" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BL/Writers/TxtTrackWriter.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="80" column="198" selection-start-line="80" selection-start-column="198" selection-end-line="80" selection-end-column="198" />
-          <folding>
-            <marker date="1563642689692" expanded="true" signature="6:70" ph="..." />
-            <marker date="1563642689692" expanded="true" signature="92:3806" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="141:3804" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="197:3780" ph="{...}" />
-            <marker date="1563642689692" expanded="false" signature="524:909" ph="{...}" />
-            <marker date="1563642689692" expanded="false" signature="1129:1514" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="1551:1617" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="1899:1991" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="2012:2115" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="2316:2384" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="2462:3632" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="2621:3618" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="2833:3131" ph="{...}" />
-            <marker date="1563642689692" expanded="true" signature="3265:3563" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="6:148" ph="..." />
+            <marker date="1563737623070" expanded="true" signature="171:11036" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="191:11034" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="237:2463" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="1524:2219" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="1577:2201" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="2240:2396" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="2510:4596" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="3455:4350" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="3508:4332" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="4371:4511" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="4698:8387" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="5682:8110" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="5735:8092" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="5973:6178" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="6415:7685" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="6481:7319" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="6810:7285" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="7385:7655" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="7718:7885" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="8131:8269" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="8448:8574" ph="{...}" />
+            <marker date="1563737623070" expanded="false" signature="8643:11028" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="8903:9403" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="9666:10170" ph="{...}" />
+            <marker date="1563737623070" expanded="true" signature="10433:10937" ph="{...}" />
           </folding>
         </state>
       </provider>

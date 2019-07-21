@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using Domain;
 
@@ -7,7 +8,7 @@ namespace BL.Writers
 {
     public class TxtTrackWriter : ITrackWriter
     {
-        public void writeTracks(ArrayList tracks)
+        public void writeTracks(List<Track> tracks)
         {
             int startingHourAm;
             int startingHourPm;
